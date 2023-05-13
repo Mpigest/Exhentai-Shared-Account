@@ -3,7 +3,7 @@
 
 <p>进入里站后，可从三个公共账号里选择一个登录。</p>
 <h2><strong>运行环境</strong></h2>
-安装<a href=https://www.tampermonkey.net>Tampermonkey</a>插件后导入脚本，或在<a href=https://sleazyfork.org/zh-CN/scripts/465444-exhentai%E5%85%AC%E5%85%B1%E8%B4%A6%E5%8F%B7>Sleazyfork</a>安装脚本。
+安装<a href=https://www.tampermonkey.net>Tampermonkey</a>插件后导入脚本，或在我的<a href=https://sleazyfork.org/zh-CN/scripts/465444-exhentai%E5%85%AC%E5%85%B1%E8%B4%A6%E5%8F%B7>Sleazyfork</a>安装脚本。
 <h2><strong>使用方法/注意事项</strong></h2>
 <ul><li>若是之前有过浏览<a href=https://exhentai.org>里站</a>的记录，记得把cookie清理掉（包括<a href=https://e-hentai.org/>表站</a>和<a href=https://forums.e-hentai.org/>论坛</a>）,不然脚本可能不起作用;</ul>
 <ul><li>若进入站点还是空白页，记得刷新一下界面;</ul>
@@ -33,5 +33,4 @@ cookie的清理方法请自行搜索。
 
 <s>自费重新注册了一个e站账号（刚注册，里站权限还没下来）。后续如果公共账号的cookie失效，可以继续更新脚本（有里站权限的话），送给大家霍霍</s>（但还是请爱护账号：不要评论，收藏尽量使用书签。总之避免做显眼的事，以免被管理盯上）。
 
-更新计划已完成☆⌒(≧▽​° )，在绅士界留下jio印ヽ(*´∀｀)八(´∀｀*)ノ。
-大家后会有期（＾∀＾●）ﾉｼ。
+更新计划已完成☆⌒(≧▽​° )，大家后会有期（＾∀＾●）ﾉｼ。
