@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name           Exhentai公共账号
 // @description    替换Exhentai的cookie，自动登录
-// @version        1.4.2
+// @version        1.4.3
 // @author         福尔魔猪
 // @icon           https://exhentai.org/favicon.ico
 // @match          *://*.exhentai.org/*
 // @match          *://exhentai.org/
 // @license        MIT
-// @namespace      https://greasyfork.org/users/1072365
+// @namespace      https://github.com/MagicPigZHN/Exhentai-Shared-Account
 // @compatible     firefox
 // @compatible     edge
 // @compatible     chrome
@@ -81,9 +81,9 @@
                 document.cookie = "igneous=3fef094b8; expires=" + expireDate.toUTCString();
                 window.location.reload();
             } else if (account == "3") {
-                document.cookie = "ipb_member_id=7013610; expires=" + expireDate.toUTCString();
-                document.cookie = "ipb_pass_hash=1ff72e5df8f1949f2b48b49748432eca; expires=" + expireDate.toUTCString();
-                document.cookie = "igneous=298743a95; expires=" + expireDate.toUTCString();
+                document.cookie = "ipb_member_id=7317440; expires=" + expireDate.toUTCString();
+                document.cookie = "ipb_pass_hash=dbba714316273efe9198992d40a20172; expires=" + expireDate.toUTCString();
+                document.cookie = "igneous=a471a8815; expires=" + expireDate.toUTCString();
                 window.location.reload();
             } else {
                 alert("无效的账号选择！");
