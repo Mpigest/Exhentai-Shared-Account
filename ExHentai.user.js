@@ -8,9 +8,9 @@
 // @match          *://exhentai.org/
 // @license        MIT
 // @namespace      https://github.com/MagicPigZHN/Exhentai-Shared-Account
-// @compatible firefox
-// @compatible chrome
-// @compatible edge
+// @compatible     firefox
+// @compatible     chrome
+// @compatible     edge
 // ==/UserScript==
 (function(){
     'use strict';
