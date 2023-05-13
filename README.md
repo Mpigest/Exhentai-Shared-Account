@@ -5,8 +5,8 @@
 <h2><strong>运行环境</strong></h2>
 安装<a href=https://www.tampermonkey.net>Tampermonkey</a>插件后导入脚本，或在我的<a href=https://sleazyfork.org/zh-CN/scripts/465444-exhentai%E5%85%AC%E5%85%B1%E8%B4%A6%E5%8F%B7>Sleazyfork</a>安装脚本。
 <h2><strong>使用方法/注意事项</strong></h2>
-<ul><li>若是之前有过浏览<a href=https://exhentai.org>里站</a>的记录，记得把cookie清理掉（包括<a href=https://e-hentai.org/>表站</a>和<a href=https://forums.e-hentai.org/>论坛</a>）,不然脚本可能不起作用;</ul>
-<ul><li>若进入站点还是空白页，记得刷新一下界面;</ul>
+<ul><li>若是之前有过浏览<a href=https://exhentai.org>里站</a>的记录，记得把cookie清理掉（包括<a href=https://e-hentai.org/>表站</a>和<a href=https://forums.e-hentai.org/>论坛</a>）,否则脚本可能不起作用;</ul>
+<ul><li>若进入站点还是空白页（大概率不会）或页面错误（一般是节点问题），请尝试刷新页面;</ul>
 <ul><li>开启脚本并进入里站后，会弹出一个提示框。根据需求，选择其中一个账号即可;</ul>
 <ul><li>成功进入站点一次之后，可选择关闭脚本，若想更换账号，再次开启脚本即可。</ul>
 <h2><strong>账号说明</strong></h2>
