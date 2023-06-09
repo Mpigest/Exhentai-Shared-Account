@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name           Exhentai公共账号
 // @description    替换Exhentai的cookie，自动登录
-// @version        1.4.4
+// @version        1.4.5
 // @author         福尔魔猪
 // @icon           https://exhentai.org/favicon.ico
 // @match          *://*.exhentai.org/*
 // @match          *://exhentai.org/
 // @license        MIT
-// @namespace      https://github.com/MagicPigZHN/Exhentai-Shared-Account
+// @namespace      https://greasyfork.org/users/1072365
 // @compatible     firefox
 // @compatible     edge
 // @compatible     chrome
@@ -18,7 +18,7 @@
     expireDate.setFullYear(expireDate.getFullYear() + 100);
 
     if (location.host == 'exhentai.org' && document.cookie.split(';').length < 3) {
-        //UI&背景&按钮
+        //背景
         var img = document.createElement("img");
         img.src = "https://c4.kemono.party/data/b3/78/b378113d5d01c9f15aa40622d30035a784613c8d16d80d023e37fb477747d310.jpg?f=001560d6-17f0-4df8-98e7-244d8601dfbd.jpg";
         img.style.position = "fixed";
@@ -29,6 +29,7 @@
         img.style.objectFit = "cover";
         document.body.appendChild(img);
 
+        //UI窗口
         var dialog = document.createElement("div");
         dialog.style.position = "fixed";
         dialog.style.top = "50%";
@@ -39,7 +40,6 @@
         dialog.style.borderRadius = "5px";
         dialog.style.boxShadow = "0px 0px 10px 1px rgba(0, 0, 0, 0.5)";
         dialog.innerHTML = "<p style='font-size: 35px; text-align: center; font-family: \"仿宋\", sans-serif; font-weight: bold; color: #9370DB;'>请选择公共账号：</p>";
-
         var button1 = document.createElement("button");
         button1.style.backgroundColor = "#ffd4fd";
         button1.style.margin = "10px";
@@ -54,12 +54,30 @@
         button1.style.boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.2)";
         button1.style.backgroundImage = "linear-gradient(to bottom, #ffd4fd, #ffb2e8)";
         button1.innerHTML = "账号1";
+
+        //按钮1
+        button1.onmousedown = function() {
+            button1.style.boxShadow = "none";
+            button1.style.transform = "translateY(2px)";
+        };
+
+        button1.onmouseup = function() {
+            button1.style.boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.2)";
+            button1.style.transform = "none";
+        };
+
+        button1.onmouseleave = function() {
+            button1.style.boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.2)";
+            button1.style.transform = "none";
+        };
+
         button1.onclick = function() {
             setCookie("1");
         };
+
         dialog.appendChild(button1);
 
-
+        //按钮2
         var button2 = document.createElement("button");
         button2.style.backgroundColor = "#ffd4fd";
         button2.style.margin = "10px";
@@ -74,11 +92,29 @@
         button2.style.boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.2)";
         button2.style.backgroundImage = "linear-gradient(to bottom, #ffd4fd, #ffb2e8)";
         button2.innerHTML = "账号2";
+
+        button2.onmousedown = function() {
+            button2.style.boxShadow = "none";
+            button2.style.transform = "translateY(2px)";
+        };
+
+        button2.onmouseup = function() {
+            button2.style.boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.2)";
+            button2.style.transform = "none";
+        };
+
+        button2.onmouseleave = function() {
+            button2.style.boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.2)";
+            button2.style.transform = "none";
+        };
+
         button2.onclick = function() {
             setCookie("2");
         };
+
         dialog.appendChild(button2);
 
+        //按钮3
         var button3 = document.createElement("button");
         button3.style.backgroundColor = "#ffd4fd";
         button3.style.margin = "10px";
@@ -93,12 +129,30 @@
         button3.style.boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.2)";
         button3.style.backgroundImage = "linear-gradient(to bottom, #ffd4fd, #ffb2e8)";
         button3.innerHTML = "账号3";
+
+        button3.onmousedown = function() {
+            button3.style.boxShadow = "none";
+            button3.style.transform = "translateY(2px)";
+        };
+
+        button3.onmouseup = function() {
+            button3.style.boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.2)";
+            button3.style.transform = "none";
+        };
+
+        button3.onmouseleave = function() {
+            button3.style.boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.2)";
+            button3.style.transform = "none";
+        };
+
         button3.onclick = function() {
             setCookie("3");
         };
+
         dialog.appendChild(button3);
 
         document.body.appendChild(dialog);
+
         //按钮--->cookie替换
         function setCookie(account) {
             if (account == "1") {
@@ -207,4 +261,3 @@
         }
     }
 })();
-
