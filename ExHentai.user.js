@@ -40,6 +40,8 @@
         dialog.style.borderRadius = "5px";
         dialog.style.boxShadow = "0px 0px 10px 1px rgba(0, 0, 0, 0.5)";
         dialog.innerHTML = "<p style='font-size: 35px; text-align: center; font-family: \"仿宋\", sans-serif; font-weight: bold; color: #9370DB;'>请选择公共账号：</p>";
+
+        //按钮1
         var button1 = document.createElement("button");
         button1.style.backgroundColor = "#ffd4fd";
         button1.style.margin = "10px";
@@ -55,7 +57,6 @@
         button1.style.backgroundImage = "linear-gradient(to bottom, #ffd4fd, #ffb2e8)";
         button1.innerHTML = "账号1";
 
-        //按钮1
         button1.onmousedown = function() {
             button1.style.boxShadow = "none";
             button1.style.transform = "translateY(2px)";
