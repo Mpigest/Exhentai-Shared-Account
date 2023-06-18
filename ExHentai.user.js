@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           Exhentai公共账号
 // @description    替换Exhentai的cookie，自动登录
-// @version        1.4.5
+// @version        1.4.6
 // @author         福尔魔猪
 // @icon           https://exhentai.org/favicon.ico
 // @match          *://*.exhentai.org/*
@@ -117,33 +117,33 @@
 
         //按钮3
         var button3 = document.createElement("button");
-        button3.style.backgroundColor = "#ffd4fd";
-        button3.style.margin = "10px";
-        button3.style.padding = "5px 10px";
-        button3.style.borderRadius = "5px";
-        button3.style.border = "none";
-        button3.style.cursor = "pointer";
-        button3.style.fontFamily = "仿宋";
-        button3.style.color = "#d058ea";
-        button3.style.fontWeight = "bold";
-        button3.style.fontSize = "20px";
-        button3.style.boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.2)";
-        button3.style.backgroundImage = "linear-gradient(to bottom, #ffd4fd, #ffb2e8)";
+        button3.style。backgroundColor = "#ffd4fd";
+        button3.style。margin = "10px";
+        button3.style。padding = "5px 10px";
+        button3.style。borderRadius = "5px";
+        button3.style。border = "none";
+        button3.style。cursor = "pointer";
+        button3.style。fontFamily = "仿宋";
+        button3.style。color = "#d058ea";
+        button3.style。fontWeight = "bold";
+        button3.style。fontSize = "20px";
+        button3.style。boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.2)";
+        button3.style。backgroundImage = "linear-gradient(to bottom, #ffd4fd, #ffb2e8)";
         button3.innerHTML = "账号3";
 
         button3.onmousedown = function() {
-            button3.style.boxShadow = "none";
-            button3.style.transform = "translateY(2px)";
+            button3.style。boxShadow = "none";
+            button3.style。transform = "translateY(2px)";
         };
 
         button3.onmouseup = function() {
-            button3.style.boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.2)";
-            button3.style.transform = "none";
+            button3.style。boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.2)";
+            button3.style。transform = "none";
         };
 
         button3.onmouseleave = function() {
-            button3.style.boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.2)";
-            button3.style.transform = "none";
+            button3.style。boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.2)";
+            button3.style。transform = "none";
         };
 
         button3.onclick = function() {
@@ -152,44 +152,47 @@
 
         dialog.appendChild(button3);
 
-        document.body.appendChild(dialog);
+        document.内容。appendChild(dialog);
 
         //按钮--->cookie替换
-        function setCookie(account) {
+        function setCookie(帐户) {
             if (account == "1") {
                 document.cookie = "ipb_member_id=7013610; expires=" + expireDate.toUTCString();
                 document.cookie = "ipb_pass_hash=1ff72e5df8f1949f2b48b49748432eca; expires=" + expireDate.toUTCString();
                 document.cookie = "igneous=298743a95; expires=" + expireDate.toUTCString();
-                window.location.reload();
+                document.cookie = "sk=jk48ce848x8ot0t4btceztyx5t3u; expires=" + expireDate.toUTCString();
+                window.位置。reload();
             } else if (account == "2") {
                 document.cookie = "ipb_member_id=5191636; expires=" + expireDate.toUTCString();
                 document.cookie = "ipb_pass_hash=544b6a81f07d356f3753032183d1fdfb; expires=" + expireDate.toUTCString();
                 document.cookie = "igneous=3fef094b8; expires=" + expireDate.toUTCString();
-                window.location.reload();
+                document.cookie = "sk=9cqnaiva7o3feybrrs2qk8feawhn; expires=" + expireDate.toUTCString();
+                window.位置。reload();
             } else if (account == "3") {
                 document.cookie = "ipb_member_id=7317440; expires=" + expireDate.toUTCString();
                 document.cookie = "ipb_pass_hash=dbba714316273efe9198992d40a20172; expires=" + expireDate.toUTCString();
                 document.cookie = "igneous=a471a8815; expires=" + expireDate.toUTCString();
-                window.location.reload();
+                document.cookie = "sk=l4j3radd014zrmdxr2lxpn1mwhwx; expires=" + expireDate.toUTCString();
+                window.位置。reload();
             } else {
                 alert("无效的账号选择！");
             }
         }
-    } else {
+    } else if (location.host == 'exhentai.org' && document.cookie。分屏(';')。length >= 3){
         // 点击图标更换账号
         var icon = document.createElement('img');
         icon.src = 'https://kemono.party/icons/fanbox/50258193';
-        icon.style.position = 'fixed';
-        icon.style.bottom = '50px';
-        icon.style.right = '5px';
-        icon.style.width = '40px';
-        icon.style.height = '40px';
-        icon.style.borderRadius = '50%';
-        icon.style.cursor = 'pointer';
-        icon.style.zIndex = '9999';
-        icon.style.border = '2px solid #dd95ed';
-        icon.style.transition = 'transform 0.3s ease-in-out';
-        document.body.appendChild(icon);
+        icon.style。position = 'fixed';
+        icon.style。bottom = '50px';
+        icon.style。right = '5px';
+        icon.style。width = '40px';
+        icon.style。height = '40px';
+        icon.style。borderRadius = '50%';
+        icon.style。cursor = 'pointer';
+        icon.style。zIndex = '9999';
+        icon.style。border = '2px solid #dd95ed';
+        icon.style。transition = 'transform 0.3s ease-in-out';
+        document.内容。appendChild(icon);
 
         var isDragging = false;
         var startX = 0;
@@ -199,7 +202,7 @@
 
         icon.addEventListener('mousedown', startDrag);
 
-        function startDrag(event) {
+        function startDrag(事件) {
             event.preventDefault();
 
             startX = event.clientX;
@@ -211,7 +214,7 @@
             document.addEventListener('mouseup', stopDrag);
         }
 
-        function drag(event) {
+        function drag(事件) {
             var newLeft = initialLeft + (event.clientX - startX);
             var newTop = initialTop + (event.clientY - startY);
 
@@ -221,13 +224,13 @@
             newLeft = Math.max(0, Math.min(newLeft, maxX));
             newTop = Math.max(0, Math.min(newTop, maxY));
 
-            icon.style.left = newLeft + 'px';
-            icon.style.top = newTop + 'px';
+            icon.style。left = newLeft + 'px';
+            icon.style。top = newTop + 'px';
 
             isDragging = true;
         }
 
-        function stopDrag(event) {
+        function stopDrag(事件) {
             document.removeEventListener('mousemove', drag);
             document.removeEventListener('mouseup', stopDrag);
 
@@ -239,7 +242,7 @@
         }
 
         // 阻止点击事件触发清除 cookie 操作
-        icon.addEventListener('click', function (event) {
+        icon.addEventListener('click', function (事件) {
             if (isDragging) {
                 event.preventDefault();
             }
@@ -247,18 +250,18 @@
         });
 
         icon.addEventListener('mouseover', function () {
-            icon.title = '更换账号';
+            icon.标题 = '更换账号';
         });
 
         function CLCCookies() {
-            var cookies = document.cookie.split(';');
+            var cookies = document.cookie。分屏(';');
             for (var i = 0; i < cookies.length; i++) {
                 var cookie = cookies[i];
                 var eqPos = cookie.indexOf('=');
-                var name = eqPos > -1 ? cookie.substr(0, eqPos).trim() : cookie.trim();
+                var 名字 = eqPos > -1 ? cookie.substr(0, eqPos)。trim() : cookie.trim();
                 document.cookie = name + '=;expires=Thu, 01 May 2001 00:00:00 GMT;path=/';
             }
-            window.location.reload();
+            window.位置。reload();
         }
     }
 })();
