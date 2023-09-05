@@ -20,7 +20,7 @@
 
 <p>cookie的清理方法请自行搜索。</p></s>
 
-更新过后可通过点击<a href=https://kemono.party/icons/fanbox/50258193>图标</a>切换账号
+更新过后可通过点击<a href="https://github.com/Mpigest/Exhentai-Shared-Account/blob/master/picture/icon.jpg?raw=true">图标</a>切换账号
 <h2><strong>兼容</strong></h2>
 火狐、chrome、edge均可运行，其他浏览器请自行测试。
 <h2><strong>引用</strong></h2>
