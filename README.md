@@ -27,7 +27,7 @@
 <s><p><b>账号1</b>cookie来自： https://exhentai.home.blog/2021/10/24/jc01/</s> (已失效，已更换)</p>
 
 <p><b>账号2</b>cookie来自： https://south-plus.net/simple/index.php?t786170.html</p>
-<h2><strong>更新计划/后话</strong><br/></h2>
+<h2><strong>更新计划/后话</strong></h2>
 <p>纯萌新，第一次接触脚本，有问题请见谅。</p>
 
 <s>大概率不会更新</s>，且用且珍惜。
@@ -38,9 +38,8 @@
 
 更新计划已完成☆⌒(≧▽​° )，大家后会有期（＾∀＾●）ﾉｼ
 
-<h2><strong>更新日志</strong><br/></h2>
-
-<h3><strong><ul><li><p>2023/9/5:</p></strong></h3>
+<h2><strong>更新日志</strong></h2>
+<h3><strong>2023/9/5:</strong></h3>
   <p>1. 账号1已失效，更换账号;</p>
   <s><p>2. 更改切换账号的运行逻辑，有且只在域名为 “ https://exhentai.org ” 时可运行</p></s>
-</ul>
+
