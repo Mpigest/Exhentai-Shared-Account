@@ -3,7 +3,7 @@
 
 <p>进入里站后，可从三个公共账号里选择一个登录。</p>
 <h2><strong>运行环境/脚本安装</strong></h2>
-安装<a href=https://www.tampermonkey.net>Tampermonkey</a>插件后<a href=https://github.com/MagicPigZHN/Exhentai-Shared-Account/raw/master/ExHentai.user.js>导入脚本</a>，或在我的<a href=https://sleazyfork.org/zh-CN/scripts/465444-exhentai%E5%85%AC%E5%85%B1%E8%B4%A6%E5%8F%B7>Sleazyfork</a>安装脚本。
+安装<a href=https://www.tampermonkey.net>Tampermonkey</a>插件后安装<a href=https://github.com/Mpigest/Exhentai-Shared-Account/raw/master/Exhentai.user.js>导入脚本</a>，或在我的<a href=https://sleazyfork.org/zh-CN/scripts/465444-exhentai%E5%85%AC%E5%85%B1%E8%B4%A6%E5%8F%B7>Sleazyfork</a>安装脚本。
 <h2><strong>使用方法/注意事项</strong></h2>
 <ul><li>若是之前有过浏览<a href=https://exhentai.org>里站</a>的记录，记得把cookie清理掉（包括<a href=https://e-hentai.org/>表站</a>和<a href=https://forums.e-hentai.org/>论坛</a>）,否则脚本可能不起作用;</ul>
 <ul><li>若进入站点还是空白页（大概率不会）或页面错误（一般是节点问题），请尝试刷新页面;</ul>
